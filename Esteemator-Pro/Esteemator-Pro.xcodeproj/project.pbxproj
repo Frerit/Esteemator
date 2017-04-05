@@ -14,6 +14,7 @@
 		AFC5C2BB1E95490300C76A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2BA1E95490300C76A7A /* Assets.xcassets */; };
 		AFC5C2BE1E95490300C76A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2BC1E95490300C76A7A /* LaunchScreen.storyboard */; };
 		AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */; };
+		AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AFC5C2BD1E95490300C76A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC5C2BF1E95490300C76A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = View/HomePageViewController.swift; sourceTree = "<group>"; };
+		AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentPageViewController.swift; path = View/ContentPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */,
+				AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */,
 				AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */,
 				AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */,
 				AFC5C2B91E95490300C76A7A /* Esteemator_Pro.xcdatamodeld in Sources */,
@@ -326,6 +330,7 @@
 				AFC5C2C41E95490300C76A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

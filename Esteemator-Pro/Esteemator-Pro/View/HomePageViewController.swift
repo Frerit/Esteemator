@@ -8,30 +8,42 @@
 
 import UIKit
 
-class HomePageViewController: UIPageViewController {
-
+class HomePageViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+   
+    
+    var pageViewController: UIPageViewController!
+    let pages = ["FirstPageVC","SecondPageVC","ThrirdPageVC"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let vc  = storyboard?.instantiateViewController(withIdentifier: "PageviewControllers") {
+            self.addChildViewController(vc)
+            self.view.addSubview(vc.view)
+            
+            self.pageViewController.dataSource = self
+            self.pageViewController.delegate = self
+            
+            pageViewController.setViewControllers([self.viewcontrollerAtOIndex(index: 0)!], direction: .forward, animated: true, completion: nil)
+            pageViewController.didMove(toParentViewController: self)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func viewcontrollerAtOIndex(index: Int) -> UIViewController? {
+        let vc = storyboard?.instantiateViewController(withIdentifier: pages[index])
+        return vc
     }
     
-
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        return nil
     }
-    */
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        return nil
+    }
 
+    
+    
 }
