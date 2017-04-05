@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B01E95490300C76A7A /* AppDelegate.swift */; };
+		AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B21E95490300C76A7A /* ViewController.swift */; };
+		AFC5C2B61E95490300C76A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2B41E95490300C76A7A /* Main.storyboard */; };
+		AFC5C2B91E95490300C76A7A /* Esteemator_Pro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B71E95490300C76A7A /* Esteemator_Pro.xcdatamodeld */; };
+		AFC5C2BB1E95490300C76A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2BA1E95490300C76A7A /* Assets.xcassets */; };
+		AFC5C2BE1E95490300C76A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2BC1E95490300C76A7A /* LaunchScreen.storyboard */; };
+		AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Esteemator-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC5C2B01E95490300C76A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFC5C2B21E95490300C76A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFC5C2B51E95490300C76A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFC5C2B81E95490300C76A7A /* Esteemator_Pro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Esteemator_Pro.xcdatamodel; sourceTree = "<group>"; };
+		AFC5C2BA1E95490300C76A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC5C2BD1E95490300C76A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFC5C2BF1E95490300C76A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = View/HomePageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC5C2AA1E95490300C76A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC5C2A41E95490300C76A7A = {
+			isa = PBXGroup;
+			children = (
+				AFC5C2AF1E95490300C76A7A /* Esteemator-Pro */,
+				AFC5C2AE1E95490300C76A7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC5C2AE1E95490300C76A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC5C2AF1E95490300C76A7A /* Esteemator-Pro */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5C2C81E954FA000C76A7A /* Views */,
+				AFC5C2C51E954F6000C76A7A /* Controller */,
+				AFC5C2B01E95490300C76A7A /* AppDelegate.swift */,
+				AFC5C2B21E95490300C76A7A /* ViewController.swift */,
+				AFC5C2B41E95490300C76A7A /* Main.storyboard */,
+				AFC5C2BA1E95490300C76A7A /* Assets.xcassets */,
+				AFC5C2BC1E95490300C76A7A /* LaunchScreen.storyboard */,
+				AFC5C2BF1E95490300C76A7A /* Info.plist */,
+				AFC5C2B71E95490300C76A7A /* Esteemator_Pro.xcdatamodeld */,
+			);
+			path = "Esteemator-Pro";
+			sourceTree = "<group>";
+		};
+		AFC5C2C51E954F6000C76A7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AFC5C2C81E954FA000C76A7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC5C2AC1E95490300C76A7A /* Esteemator-Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC5C2C21E95490300C76A7A /* Build configuration list for PBXNativeTarget "Esteemator-Pro" */;
+			buildPhases = (
+				AFC5C2A91E95490300C76A7A /* Sources */,
+				AFC5C2AA1E95490300C76A7A /* Frameworks */,
+				AFC5C2AB1E95490300C76A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Esteemator-Pro";
+			productName = "Esteemator-Pro";
+			productReference = AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC5C2A51E95490300C76A7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = strategee;
+				TargetAttributes = {
+					AFC5C2AC1E95490300C76A7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6B27SHWUXZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AFC5C2A81E95490300C76A7A /* Build configuration list for PBXProject "Esteemator-Pro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"es-419",
+			);
+			mainGroup = AFC5C2A41E95490300C76A7A;
+			productRefGroup = AFC5C2AE1E95490300C76A7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC5C2AC1E95490300C76A7A /* Esteemator-Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC5C2AB1E95490300C76A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC5C2BE1E95490300C76A7A /* LaunchScreen.storyboard in Resources */,
+				AFC5C2BB1E95490300C76A7A /* Assets.xcassets in Resources */,
+				AFC5C2B61E95490300C76A7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC5C2A91E95490300C76A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */,
+				AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */,
+				AFC5C2B91E95490300C76A7A /* Esteemator_Pro.xcdatamodeld in Sources */,
+				AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFC5C2B41E95490300C76A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC5C2B51E95490300C76A7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFC5C2BC1E95490300C76A7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFC5C2BD1E95490300C76A7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFC5C2C01E95490300C76A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFC5C2C11E95490300C76A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC5C2C31E95490300C76A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6B27SHWUXZ;
+				INFOPLIST_FILE = "Esteemator-Pro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.strategee.Esteemator-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AFC5C2C41E95490300C76A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6B27SHWUXZ;
+				INFOPLIST_FILE = "Esteemator-Pro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.strategee.Esteemator-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC5C2A81E95490300C76A7A /* Build configuration list for PBXProject "Esteemator-Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC5C2C01E95490300C76A7A /* Debug */,
+				AFC5C2C11E95490300C76A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC5C2C21E95490300C76A7A /* Build configuration list for PBXNativeTarget "Esteemator-Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC5C2C31E95490300C76A7A /* Debug */,
+				AFC5C2C41E95490300C76A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFC5C2B71E95490300C76A7A /* Esteemator_Pro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFC5C2B81E95490300C76A7A /* Esteemator_Pro.xcdatamodel */,
+			);
+			currentVersion = AFC5C2B81E95490300C76A7A /* Esteemator_Pro.xcdatamodel */;
+			path = Esteemator_Pro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFC5C2A51E95490300C76A7A /* Project object */;
+}
