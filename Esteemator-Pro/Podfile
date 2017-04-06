@@ -9,4 +9,8 @@ target 'Esteemator-Pro' do
   pod 'BubbleTransition'
   pod 'APESuperHUD'
   pod 'SideMenu' 
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'GoogleSignIn'
 end
