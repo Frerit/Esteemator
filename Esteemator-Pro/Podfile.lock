@@ -1,0 +1,24 @@
+PODS:
+  - APESuperHUD (1.1.2)
+  - BubbleTransition (2.0.1)
+  - IQKeyboardManager (4.0.8)
+  - SideMenu (2.3.0)
+  - TextFieldEffects (1.3.2)
+
+DEPENDENCIES:
+  - APESuperHUD
+  - BubbleTransition
+  - IQKeyboardManager
+  - SideMenu
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  APESuperHUD: 9c7ea17cea21b4a9212f1c43810b0c8b9ee585a6
+  BubbleTransition: bb24ed389ab672eecf3c87170d0a73f959a8e696
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
+  TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
+
+PODFILE CHECKSUM: 504a28db9a9002a54c441f553af6195d46ab5e56
+
+COCOAPODS: 1.2.0
