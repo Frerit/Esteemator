@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
     
@@ -42,6 +43,10 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
         self.butonLogin.layer.cornerRadius = 3
         self.butonRegister.layer.cornerRadius = 3
         
+        /// Eliminar cunado este listo
+         
+       try! FIRAuth.auth()?.signOut()
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -65,6 +70,22 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
         vc.pageIndex = index
         
         return vc
+    }
+    
+    
+    @IBAction func loginInitialValidation(_ sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let objectView:UIViewController!
+        if (FIRAuth.auth()?.currentUser) != nil {
+           objectView = storyboard.instantiateViewController(withIdentifier: "ListFormulesView")
+        } else {
+            objectView = storyboard.instantiateViewController(withIdentifier: "LoginInitView")
+        }
+        objectView.modalPresentationStyle = UIModalPresentationStyle.custom
+        objectView.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        DispatchQueue.main.async {
+            self.present(objectView, animated: true, completion: nil)
+        }
     }
     
     

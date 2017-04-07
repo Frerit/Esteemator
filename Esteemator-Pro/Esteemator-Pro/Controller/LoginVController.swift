@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+import APESuperHUD
+import TextFieldEffects
 
 class LoginVController: UIViewController, GIDSignInUIDelegate {
 
@@ -16,6 +19,12 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var contentBottonGoogle: UIView!
     @IBOutlet weak var buttonIngreso: UIButton!
     @IBOutlet weak var contenButtonFacebook: UIView!
+    
+    // Login sin redes
+    @IBOutlet weak var userEmail: HoshiTextField!
+    @IBOutlet weak var userPassword: HoshiTextField!
+    
+    let ref = FIRDatabase.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +37,42 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         self.buttonIngreso.layer.cornerRadius = 3
         self.contenButtonFacebook.layer.cornerRadius = 3
         
-    }
-   
-    @IBAction func loginGoogleIn(_ sender: AnyObject) {
-        GIDSignIn.sharedInstance().signIn()
         
         FIRAuth.auth()?.addStateDidChangeListener({ auth, user in
             if (FIRAuth.auth()?.currentUser) != nil {
-                print("Esta logiado")
+                self.ref.observe(.value, with: { scope in
+                
+                    for item in scope.value as! NSDictionary {
+                        let iter = item
+                        print(iter.key)
+                    }
+                    
+//                    print(usuario["users"]!.allKeys!.first!)
+//                    print(user!.uid)
+//                 
+//                    
+                    
+                })
             } else {
-                print("no lo esta")
+                // No user is signed in.
             }
         })
+    }
+   
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (FIRAuth.auth()?.currentUser) != nil {
+                self.sendLoginSucces(views: "ListFormulesView")
+        }
+    }
+    
+    
+    
+    
+    @IBAction func loginGoogleIn(_ sender: AnyObject) {
+        GIDSignIn.sharedInstance().signIn()
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "", presentingView: self.view)
     }
     
 
@@ -53,15 +86,47 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func logintoEmailPassword(_ sender: AnyObject) {
+        if self.userEmail.text != "" && self.userPassword.text != "" {
+            APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Espera por favor", presentingView: self.view)
+            if validateEmail() {
+                FIRAuth.auth()?.signIn(withEmail: self.userEmail.text!, password: self.userPassword.text!, completion: { user, error in
+                    if user != nil {
+                        APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "", presentingView: self.view, completion: nil)
+                        self.sendLoginSucces(views: "ListFormulesView")
+                    } else {
+                        print(error!.localizedDescription)
+                    }
+                })
+            }
+        } else {
+            APESuperHUD.showOrUpdateHUD(icon: .info, message: "Ingresa tu correo y la contraseña", presentingView: self.view, completion: { 
+                self.userEmail.becomeFirstResponder()
+            })
+        }
     }
-    */
+    
+    func sendLoginSucces(views:String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let objectView = storyboard.instantiateViewController(withIdentifier: views)
+        DispatchQueue.main.async {
+            self.present(objectView, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func validateEmail()  -> Bool{
+        let divicion = self.userEmail.text?.components(separatedBy: "@")
+        if divicion?.count == 2 {
+            let coma = divicion?[1].components(separatedBy: ".")
+            if (coma?.count)! >= 2 {  return true
+            } else{  APESuperHUD.showOrUpdateHUD(icon: .email, message: "Ingrese correo Valido", duration: 1.0, presentingView: self.view, completion: nil)   }
+            let espacio = divicion?[0].contains(" ")
+            if (espacio)! {  APESuperHUD.showOrUpdateHUD(icon: .email, message: "El correo no tiene formato valido", duration: 1.0, presentingView: self.view, completion: nil)  }
+        } else {  APESuperHUD.showOrUpdateHUD(icon: .email, message: "Ingrese correo Valido", duration: 1.0, presentingView: self.view, completion: nil) }
+        return false
+    }
+
 
 }

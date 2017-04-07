@@ -46,25 +46,29 @@ class RegisterViewController: UIViewController {
         if self.nameUser.text != "" && self.lastNameUser.text != "" && self.emailUser.text != "" && self.cityUser.text != "" && self.passwordUser.text != "" {
             
             if validateEmail() && (self.passwordUser.text?.lengthOfBytes(using: String.Encoding.utf8))! > 8 {
-                print("\(self.emailUser.text!) --- \(self.passwordUser.text!)")
+                APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Espera por favor", presentingView: self.view)
                 FIRAuth.auth()?.createUser(withEmail: self.emailUser.text!, password: self.passwordUser.text!, completion: { user, error in
                     
                     if user != nil {
-                        self.ref.child("users").child((user?.uid)!).setValue(["username":user?.displayName,
+                        self.ref.child("users").child((user?.uid)!).setValue(["nameUser":self.nameUser.text!,
                                                                               "lastname":self.lastNameUser.text!,
                                                                               "email":user?.email,
                                                                               "city":self.cityUser.text!
                             ])
-
+                        APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
+                        self.sendView(views: "ListFormulesView")
+                        
+                    } else if (error?.localizedDescription.contains("address is already"))!{
+                        APESuperHUD.showOrUpdateHUD(icon: .email, message: "El Correo ya esta registrado", presentingView: self.view, completion: nil)
                     } else {
                       print(error.debugDescription)
+                      APESuperHUD.showOrUpdateHUD(icon: .sadFace, message: "No se completo el registro", presentingView: self.view, completion: nil)
                     }
                 })
             } else {
                 APESuperHUD.showOrUpdateHUD(icon: .info, message:  "Contraseña minimo 8 caracteres entre numeros y letras", presentingView: self.view, completion: {
                     self.passwordUser.becomeFirstResponder()
                 })
-               
             }
         } else {
          APESuperHUD.showOrUpdateHUD(icon: .info, message: "No has completado los campos", presentingView: self.view, completion: { 
@@ -72,6 +76,15 @@ class RegisterViewController: UIViewController {
          })
         }
      }
+    
+    
+    func sendView(views:String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let objectView = storyboard.instantiateViewController(withIdentifier: views)
+        DispatchQueue.main.async {
+            self.present(objectView, animated: true, completion: nil)
+        }
+    }
     
     
     
@@ -87,14 +100,6 @@ class RegisterViewController: UIViewController {
         return false
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

@@ -11,6 +11,7 @@
 		AF3682F71E969DEB0003BDAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF3682F61E969DEB0003BDAE /* GoogleService-Info.plist */; };
 		AF3682FC1E96A4610003BDAE /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3682FB1E96A4610003BDAE /* Header.m */; };
 		AF3682FE1E96E2410003BDAE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */; };
+		AF9BA6431E97DD6600CA555C /* ListFormulesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */; };
 		AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B01E95490300C76A7A /* AppDelegate.swift */; };
 		AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B21E95490300C76A7A /* ViewController.swift */; };
 		AFC5C2B61E95490300C76A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2B41E95490300C76A7A /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		AF3682FA1E96A4610003BDAE /* Esteemator-Pro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Esteemator-Pro-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF3682FB1E96A4610003BDAE /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Controller/RegisterViewController.swift; sourceTree = "<group>"; };
+		AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListFormulesTableVC.swift; path = Controller/ListFormulesTableVC.swift; sourceTree = "<group>"; };
 		AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Esteemator-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC5C2B01E95490300C76A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC5C2B21E95490300C76A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				AF3682F41E969D000003BDAE /* LoginVController.swift */,
 				AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */,
+				AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				AF3682FE1E96E2410003BDAE /* RegisterViewController.swift in Sources */,
 				AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */,
 				AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */,
+				AF9BA6431E97DD6600CA555C /* ListFormulesTableVC.swift in Sources */,
 				AFC5C2B91E95490300C76A7A /* Esteemator_Pro.xcdatamodeld in Sources */,
 				AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */,
 			);

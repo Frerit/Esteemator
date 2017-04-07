@@ -12,4 +12,8 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func SshowMenuslider(_ sender: AnyObject) {
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "MenuSlider")
+        self.present(view!, animated: true, completion: nil)
+    }
 }
