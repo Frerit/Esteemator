@@ -43,9 +43,9 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
         self.butonLogin.layer.cornerRadius = 3
         self.butonRegister.layer.cornerRadius = 3
         
-        /// Eliminar cunado este listo
+        // Eliminar cunado este listo
          
-       try! FIRAuth.auth()?.signOut()
+       //try! FIRAuth.auth()?.signOut()
         
     }
     

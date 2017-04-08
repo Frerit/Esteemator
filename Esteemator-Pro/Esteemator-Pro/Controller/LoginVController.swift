@@ -40,26 +40,20 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         
         FIRAuth.auth()?.addStateDidChangeListener({ auth, user in
             if (FIRAuth.auth()?.currentUser) != nil {
-                self.ref.observe(.value, with: { scope in
-                
-                    for item in scope.value as! NSDictionary {
-                        let iter = item
-                        print(iter.key)
-                    }
+                if user != nil{
+                    self.ref.child("users").child((user?.uid)!).setValue(["nameUser": user!.displayName!,
+                                "email":user!.email!,
+                                "porvider":"redes"])
                     
-//                    print(usuario["users"]!.allKeys!.first!)
-//                    print(user!.uid)
-//                 
-//                    
-                    
-                })
+                    APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "", presentingView: self.view, completion: {
+                        self.sendLoginSucces(views: "ListFormulesView")
+                    })
+                }
             } else {
-                // No user is signed in.
+               print("Usuario no Logiuado")
             }
         })
     }
-   
-
     
     override func viewWillAppear(_ animated: Bool) {
         if (FIRAuth.auth()?.currentUser) != nil {
@@ -67,12 +61,9 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         }
     }
     
-    
-    
-    
     @IBAction func loginGoogleIn(_ sender: AnyObject) {
         GIDSignIn.sharedInstance().signIn()
-        APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "", presentingView: self.view)
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Espera por favor", presentingView: self.view)
     }
     
 
@@ -127,6 +118,4 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         } else {  APESuperHUD.showOrUpdateHUD(icon: .email, message: "Ingrese correo Valido", duration: 1.0, presentingView: self.view, completion: nil) }
         return false
     }
-
-
 }

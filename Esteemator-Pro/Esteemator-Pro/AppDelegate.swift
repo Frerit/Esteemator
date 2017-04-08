@@ -43,7 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     }
     
-
     public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
@@ -57,7 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
             print("Loggiiaaado")
-            print("\(user) - User \(user?.displayName) \n Email \(user?.photoURL)")
         }
     
     }
