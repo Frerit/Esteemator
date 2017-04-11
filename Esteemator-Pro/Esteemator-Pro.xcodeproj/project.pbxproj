@@ -12,6 +12,9 @@
 		AF3682FC1E96A4610003BDAE /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3682FB1E96A4610003BDAE /* Header.m */; };
 		AF3682FE1E96E2410003BDAE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */; };
 		AF3BAFC81E9938F400D2460C /* FormulaZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3BAFC71E9938F400D2460C /* FormulaZeroView.swift */; };
+		AF824E4A1E9C16C500586C43 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E491E9C16C500586C43 /* Utility.swift */; };
+		AF824E4C1E9C1B0000586C43 /* ModalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E4B1E9C1B0000586C43 /* ModalTestView.swift */; };
+		AF824E4E1E9C1B7900586C43 /* CustomModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E4D1E9C1B7900586C43 /* CustomModalTest.swift */; };
 		AF9BA6431E97DD6600CA555C /* ListFormulesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */; };
 		AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B01E95490300C76A7A /* AppDelegate.swift */; };
 		AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B21E95490300C76A7A /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 		AF3682FB1E96A4610003BDAE /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Controller/RegisterViewController.swift; sourceTree = "<group>"; };
 		AF3BAFC71E9938F400D2460C /* FormulaZeroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaZeroView.swift; path = Controller/FormulaZeroView.swift; sourceTree = "<group>"; };
+		AF824E491E9C16C500586C43 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Helper/Utility.swift; sourceTree = "<group>"; };
+		AF824E4B1E9C1B0000586C43 /* ModalTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalTestView.swift; path = View/ModalTestView.swift; sourceTree = "<group>"; };
+		AF824E4D1E9C1B7900586C43 /* CustomModalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomModalTest.swift; path = View/CustomModalTest.swift; sourceTree = "<group>"; };
 		AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListFormulesTableVC.swift; path = Controller/ListFormulesTableVC.swift; sourceTree = "<group>"; };
 		AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Esteemator-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC5C2B01E95490300C76A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 			name = Config;
 			sourceTree = "<group>";
 		};
+		AF824E481E9C16AA00586C43 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AF824E491E9C16C500586C43 /* Utility.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		AFC5C2A41E95490300C76A7A = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +106,7 @@
 		AFC5C2AF1E95490300C76A7A /* Esteemator-Pro */ = {
 			isa = PBXGroup;
 			children = (
+				AF824E481E9C16AA00586C43 /* Helper */,
 				AF3682F91E96A3A90003BDAE /* Config */,
 				AFC5C2C81E954FA000C76A7A /* Views */,
 				AFC5C2C51E954F6000C76A7A /* Controller */,
@@ -122,6 +137,8 @@
 			children = (
 				AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */,
 				AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */,
+				AF824E4B1E9C1B0000586C43 /* ModalTestView.swift */,
+				AF824E4D1E9C1B7900586C43 /* CustomModalTest.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -276,7 +293,10 @@
 			files = (
 				AF3682F51E969D000003BDAE /* LoginVController.swift in Sources */,
 				AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */,
+				AF824E4C1E9C1B0000586C43 /* ModalTestView.swift in Sources */,
 				AF3682FC1E96A4610003BDAE /* Header.m in Sources */,
+				AF824E4A1E9C16C500586C43 /* Utility.swift in Sources */,
+				AF824E4E1E9C1B7900586C43 /* CustomModalTest.swift in Sources */,
 				AF3BAFC81E9938F400D2460C /* FormulaZeroView.swift in Sources */,
 				AF3682FE1E96E2410003BDAE /* RegisterViewController.swift in Sources */,
 				AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */,
