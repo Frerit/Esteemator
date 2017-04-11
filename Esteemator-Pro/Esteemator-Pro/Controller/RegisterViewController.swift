@@ -47,6 +47,7 @@ class RegisterViewController: UIViewController {
             
             if validateEmail() && (self.passwordUser.text?.lengthOfBytes(using: String.Encoding.utf8))! > 8 {
                 APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Espera por favor", presentingView: self.view)
+                print("\(self.emailUser.text!) -- \(self.passwordUser.text!)")
                 FIRAuth.auth()?.createUser(withEmail: self.emailUser.text!, password: self.passwordUser.text!, completion: { user, error in
                     
                     if user != nil {

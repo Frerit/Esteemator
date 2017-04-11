@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import APESuperHUD
 import TextFieldEffects
 import BubbleTransition
@@ -21,15 +22,23 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var saveFormulas: UIButtonR!
     
     // Formula Gratuita
-    var sales: Double = 0.0
-    var minCostSales: Double = 0.0
+    var sales: Double!
+    var minCostSales: Double!
+    
+    var margeNeto: Double!
+    var merge:Double!
     
     var utility = FormulasUtility()
     var transition = BubbleTransition()
     
+    // Firebase
+    
+    let ref = FIRDatabase.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         saveFormulas.alpha = 0.5
+        
     }
     
     /* Formula free */
@@ -54,10 +63,15 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
                 resultLabel.text = utility.numberFormat(baseNumber: (result?.total)!)
                 saveFormulas.alpha = 1
             } else if sender.currentTitle == "Prueba" || sender.currentTitle == "Test" {
-                let result = self.saleWithDesiredRange(totalCost: parsedCost , desiredRange: desiredRangeParsed, type: "test" )
-                saveFormulas.alpha = 1
-                sales = result!.total
-                minCostSales = parsedCost
+                let parsedCost = Double(self.productCost.text!)!
+                let desiredRangeParsed = Double(self.desiredMarge.text!)!
+                let result = self.saleWithDesiredRange(totalCost: parsedCost, desiredRange: desiredRangeParsed, type: "test")
+                self.saveFormulas.alpha = 1
+                self.sales = (result?.total)!
+                self.margeNeto = desiredRangeParsed
+                self.minCostSales = parsedCost
+                self.merge = self.sales - self.minCostSales
+                
                 // ModalViewTestForm
                 self.sendtoModal(views: "ModalViewTestForm")
             }
@@ -75,17 +89,40 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
                 let textField = alert?.textFields![0]
                 print("Text field: \(textField!.text!)")
                 if textField?.text != "" {
+                    APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Guardando", presentingView: self.view)
+                    let parsedCost = Double(self.productCost.text!)!
+                    let desiredRangeParsed = Double(self.desiredMarge.text!)!
+                    let result = self.saleWithDesiredRange(totalCost: parsedCost, desiredRange: desiredRangeParsed, type: "test")
+                    self.saveFormulas.alpha = 1
+                    self.sales = (result?.total)!
+                    self.margeNeto = desiredRangeParsed
+                    self.minCostSales = parsedCost
+                    self.merge = self.sales - self.minCostSales
                     
+                    if let user = FIRAuth.auth()?.currentUser {
+                        self.ref.child("users")
+                            .child(user.uid)
+                            .child("Formulas")
+                            .childByAutoId()
+                            .setValue(["name":(textField?.text!)!,
+                                       "sales":self.sales,
+                                       "marge-neto":self.margeNeto,
+                                       "minCost": self.minCostSales,
+                                       "marge": self.merge,
+                                       "formula":"Free"
+                                ])
+                    }
                     APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "OK", duration: 1.0, presentingView: self.view, completion: {
-                        print("guardo")
-                        
+                        self.productCost.text = ""
+                        self.desiredMarge.text = ""
+                        self.resultLabel.text = "$0"
+                        self.saveFormulas.alpha = 0.5
                     })
                 } else {
                     self.present(alert!, animated: true, completion: nil)
                 }
             }))
             self.present(alert, animated: true, completion: nil)
-            
         } else {
             APESuperHUD.showOrUpdateHUD(icon: .info, message: "Completa la Formula para poder guardarla", presentingView: self.view, completion: nil)
         }
@@ -99,6 +136,7 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
         objectView?.tipoPrueba = "Zero"
         objectView?.sales = sales
         objectView?.minCostSales = minCostSales
+        objectView?.marge = merge
         
         DispatchQueue.main.async {
             self.present(objectView!, animated: true, completion: nil)

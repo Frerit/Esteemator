@@ -45,7 +45,7 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Eliminar cunado este listo
          
-       try! FIRAuth.auth()?.signOut()
+       //try! FIRAuth.auth()?.signOut()
         
     }
     
@@ -120,7 +120,5 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
-    
-    
     
 }

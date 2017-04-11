@@ -43,7 +43,7 @@ class LoginVController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonD
         FIRAuth.auth()?.addStateDidChangeListener({ auth, user in
             if (FIRAuth.auth()?.currentUser) != nil {
                 if user != nil{
-                    self.ref.child("users").child((user?.uid)!).setValue(["nameUser": user!.displayName!,
+                    self.ref.child("users").child((user?.uid)!).updateChildValues(["nameUser": user!.displayName!,
                                 "email":user!.email!,
                                 "porvider":"redes"])
                     APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "", presentingView: self.view, completion: {
@@ -121,6 +121,7 @@ class LoginVController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonD
                         APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "", presentingView: self.view, completion: nil)
                         self.sendLoginSucces(views: "ListFormulesView")
                     } else {
+                        APESuperHUD.showOrUpdateHUD(icon: .info, message: (error?.localizedDescription)!, presentingView: self.view, completion: nil)
                         print(error!.localizedDescription)
                     }
                 })

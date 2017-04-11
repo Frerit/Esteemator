@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         let openGoogle = GIDSignIn.sharedInstance().handle(url,sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
                                                            annotation: options[UIApplicationOpenURLOptionsKey.annotation])
-        return openFacebook ? openGoogle : openFacebook
+        return  openGoogle
 
     }
     

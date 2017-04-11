@@ -8,21 +8,36 @@
 
 import UIKit
 
-class CustomModalTest: UIViewController {
 
+class CustomModalTest: UIViewController {
+    
     @IBOutlet weak var closeButton: UIButton!
     
     
     var tipoPrueba: String = ""
     
+    // Formula Free
+    var sales:Double! = 0.0
+    var minCostSales:Double! = 0.0
+    var marge:Double! = 0.0
+    
     // Formula 1
-    var sales:Double!
-    var minCostSales = Double()
+    var margeNeto:Double!
+    var minCostExpen:Double!
+    var opeExpenses:Double!
+    var beforeImp:Double!
+    
+    
+    // Titles 
+    let titleSales =        "Ventas"
+    let titleMinCost =      "Menos costo mercancía vendida"
+    let titleMarget =       "Margen"
+    let titleMargeB =       "Margen Bruto"
+    let titleOpeExpen =     "Menos gastos operacioneles"
+    let titleBeforeImp =    "Utilidad Neta antes de Int. E Impuestos"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -43,15 +58,19 @@ class CustomModalTest: UIViewController {
     @IBAction func closeModalTest(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let data = segue.destination as? ModalTestView
+        if tipoPrueba == "Zero" {
+            data?.datasend = [[titleSales,titleMinCost,titleMarget],
+                              [self.sales,self.minCostSales,self.marge]]
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        } else if tipoPrueba == "1" {
+            data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleBeforeImp],
+                              [self.sales,self.minCostSales, self.marge, self.minCostExpen, self.beforeImp]]
+        }
     }
-    */
-
+    
 }

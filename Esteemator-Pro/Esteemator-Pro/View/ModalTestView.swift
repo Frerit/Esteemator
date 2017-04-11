@@ -9,12 +9,19 @@
 import UIKit
 
 class ModalTestView: UITableViewController {
-
+    
+  
     // Formula 1
+    var datasend:[Array<Any>]! = [[""],[0.0]]
+    
+    let utility = FormulasUtility()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorColor = UIColor.clear
+        tableView.reloadData()
+        print(self.datasend)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,14 +43,22 @@ class ModalTestView: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return datasend[0].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "result")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "result") as? CellCustomice
         
-        cell?.textLabel?.text = "1"
+        cell?.titleLabel?.text = self.datasend[0][indexPath.row] as? String
+        let datoNum = utility.numberFormat(baseNumber: self.datasend[1][indexPath.row] as! Double )
+        cell?.priceLabel?.text = datoNum
         return cell!
     }
+    
+}
 
+class CellCustomice: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
 }

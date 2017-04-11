@@ -24,6 +24,7 @@
 		AFC5C2BE1E95490300C76A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C2BC1E95490300C76A7A /* LaunchScreen.storyboard */; };
 		AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */; };
 		AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */; };
+		AFFBEE361E9D75C300950A51 /* FormulaOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */; };
 		B7AFDC0DBDA6F2F4B657AD33 /* Pods_Esteemator_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8A7B43F45E95EDA1DE6776 /* Pods_Esteemator_Pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		AFC5C2BF1E95490300C76A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = View/HomePageViewController.swift; sourceTree = "<group>"; };
 		AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentPageViewController.swift; path = View/ContentPageViewController.swift; sourceTree = "<group>"; };
+		AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaOneView.swift; path = Controller/FormulaOneView.swift; sourceTree = "<group>"; };
 		BA8A7B43F45E95EDA1DE6776 /* Pods_Esteemator_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Esteemator_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				AF3682FD1E96E2410003BDAE /* RegisterViewController.swift */,
 				AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */,
 				AF3BAFC71E9938F400D2460C /* FormulaZeroView.swift */,
+				AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFBEE361E9D75C300950A51 /* FormulaOneView.swift in Sources */,
 				AF3682F51E969D000003BDAE /* LoginVController.swift in Sources */,
 				AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */,
 				AF824E4C1E9C1B0000586C43 /* ModalTestView.swift in Sources */,
