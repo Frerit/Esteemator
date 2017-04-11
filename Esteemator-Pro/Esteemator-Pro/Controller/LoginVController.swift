@@ -8,11 +8,12 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
 import APESuperHUD
+import FBSDKLoginKit
+import FirebaseDatabase
 import TextFieldEffects
 
-class LoginVController: UIViewController, GIDSignInUIDelegate {
+class LoginVController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
 
 
     @IBOutlet weak var logginButton: UIButton!
@@ -38,13 +39,13 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         self.contenButtonFacebook.layer.cornerRadius = 3
         
         
+        
         FIRAuth.auth()?.addStateDidChangeListener({ auth, user in
             if (FIRAuth.auth()?.currentUser) != nil {
                 if user != nil{
                     self.ref.child("users").child((user?.uid)!).setValue(["nameUser": user!.displayName!,
                                 "email":user!.email!,
                                 "porvider":"redes"])
-                    
                     APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "", presentingView: self.view, completion: {
                         self.sendLoginSucces(views: "ListFormulesView")
                     })
@@ -61,10 +62,43 @@ class LoginVController: UIViewController, GIDSignInUIDelegate {
         }
     }
     
+    // Login Googl
+    
     @IBAction func loginGoogleIn(_ sender: AnyObject) {
         GIDSignIn.sharedInstance().signIn()
         APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard, message: "Espera por favor", presentingView: self.view)
     }
+     
+    // Login Face
+    
+    @IBAction func loginFacebookIn(_ sender: AnyObject) {
+        FBSDKLoginManager().logIn(withReadPermissions: ["email","public_profile"], from: self) { (user, error) in
+            FBSDKGraphRequest(graphPath: "/me", parameters: ["fields":"id, name, email"]).start { (conection, result, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    return
+                }
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+                   
+                })
+            }
+        }
+    }
+
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("se deslogueo")
+    }
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error.localizedDescription)
+            return
+        }
+       
+    }
+    
     
 
     override func didReceiveMemoryWarning() {

@@ -13,7 +13,7 @@ import BubbleTransition
 import FirebaseDatabase
 
 class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
-
+    
     @IBOutlet weak var productCost: HoshiTextField!
     @IBOutlet weak var desiredMarge: HoshiTextField!
     @IBOutlet weak var resultLabel: UILabel!
@@ -72,15 +72,22 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
             let alert = UIAlertController(title: "Guardar Formula", message: "Colocale un nombre para identificar esta formula", preferredStyle: .alert)
             alert.addTextField { (textField) in textField.placeholder = "Ejm: Producto Nuevo" }
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0]
-            print("Text field: \(textField!.text!)")
-            if textField?.text != "" {
-                
-            } else {
-                
-            }
+                let textField = alert?.textFields![0]
+                print("Text field: \(textField!.text!)")
+                if textField?.text != "" {
+                    
+                    APESuperHUD.showOrUpdateHUD(icon: .checkMark, message: "OK", duration: 1.0, presentingView: self.view, completion: {
+                        print("guardo")
+                        
+                    })
+                } else {
+                    self.present(alert!, animated: true, completion: nil)
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
         } else {
-             APESuperHUD.showOrUpdateHUD(icon: .info, message: "Completa la Formula para poder guardarla", presentingView: self.view, completion: nil)
+            APESuperHUD.showOrUpdateHUD(icon: .info, message: "Completa la Formula para poder guardarla", presentingView: self.view, completion: nil)
         }
     }
     
@@ -97,7 +104,7 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
             self.present(objectView!, animated: true, completion: nil)
         }
     }
-   
+    
     
     // Para animar el modal
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -114,6 +121,6 @@ class FormulaZeroView: UIViewController, UIViewControllerTransitioningDelegate {
         return transition
     }
     
-
+    
     
 }

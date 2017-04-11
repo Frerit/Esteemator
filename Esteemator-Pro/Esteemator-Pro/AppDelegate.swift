@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FBSDKCoreKit
 import Firebase
 
 @UIApplicationMain
@@ -16,18 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
         FIRApp.configure()
         
-        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         let pageController = UIPageControl.appearance()
         pageController.pageIndicatorTintColor = UIColor.lightGray
         pageController.currentPageIndicatorTintColor = UIColor.white
         pageController.backgroundColor = UIColor.clear
-        
         
         // Conexion Con Google
         
@@ -38,11 +37,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url,sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
-                                                annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        let openFacebook = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        let openGoogle = GIDSignIn.sharedInstance().handle(url,sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                           annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        return openFacebook ? openGoogle : openFacebook
 
     }
     
+    // Login google
     public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
@@ -52,8 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let authentication = user.authentication
         let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!,
                                                           accessToken: (authentication?.accessToken)!)
-        // ...  
-        
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
             print("Loggiiaaado")
         }
@@ -85,6 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        FBSDKAppEvents.activateApp()
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 

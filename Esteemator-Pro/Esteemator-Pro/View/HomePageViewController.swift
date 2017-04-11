@@ -45,7 +45,7 @@ class HomePageViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Eliminar cunado este listo
          
-       //try! FIRAuth.auth()?.signOut()
+       try! FIRAuth.auth()?.signOut()
         
     }
     
