@@ -27,6 +27,20 @@ class CustomModalTest: UIViewController {
     var opeExpenses:Double!
     var beforeImp:Double!
     
+    // Formula 3
+    var priceByUnity:Double!
+    var breakeven:Double!
+    var royaltiesValue:Double!
+    
+    // Formula 6
+    var salesBefore:Double!
+    var minCostBefore:Double!
+    var grosMarginBef:Double!
+    var salesAfter:Double!
+    var minCostAff:Double!
+    var grosMarginAff:Double!
+
+    
     
     // Titles 
     let titleSales =        "Ventas"
@@ -35,7 +49,12 @@ class CustomModalTest: UIViewController {
     let titleMargeB =       "Margen Bruto"
     let titleOpeExpen =     "Menos gastos operacioneles"
     let titleBeforeImp =    "Utilidad Neta antes de Int. E Impuestos"
+    let titlepriceByUni =   "Precio Promedio de cada Unidad"
+    let titleBreakeven =    "Punto de Equilibrio en Unidades"
+    let titleRoyalties =    "Menos Royalties por Franquicias"
     
+    let titleBefor =        "Despues de otorgar el descuento"
+    let titleAffter =       "Antes de otorgar el descuento"
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -70,7 +89,26 @@ class CustomModalTest: UIViewController {
         } else if tipoPrueba == "1" {
             data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleBeforeImp],
                               [self.sales,self.minCostSales, self.marge, self.minCostExpen, self.beforeImp]]
-        }
+            
+        } else if tipoPrueba == "2" {
+            data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleBeforeImp],
+                              [self.sales,self.minCostSales, self.marge, self.minCostExpen, self.beforeImp]]
+            
+        } else if tipoPrueba == "3" {
+            data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleBeforeImp,titlepriceByUni,titleBreakeven],
+                            [self.sales,self.minCostSales, self.marge, self.minCostExpen, self.beforeImp,self.priceByUnity,self.breakeven]]
+        } else if tipoPrueba == "4" {
+            data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleBeforeImp],
+                              [self.sales,self.minCostSales, self.marge, self.minCostExpen, self.beforeImp]]
+            
+        } else if tipoPrueba == "5" {
+            data?.datasend = [[titleSales,titleMinCost,titleMargeB,titleOpeExpen,titleRoyalties,titleBeforeImp],[self.sales,self.minCostSales, self.marge, self.minCostExpen,self.royaltiesValue, self.beforeImp]]
+        } else if tipoPrueba == "6" ||
+                  tipoPrueba == "7" {
+              data?.datasend = [[titleBefor,titleSales,titleMinCost,titleMargeB,
+                                 titleAffter,titleSales,titleMinCost,titleMargeB],
+                                [0.0,self.salesBefore,self.minCostBefore, self.grosMarginBef,
+                                 0.0,self.salesAfter,self.minCostAff, self.grosMarginAff]]        }
     }
     
 }

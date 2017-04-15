@@ -6,6 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -362,16 +366,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZF-Fu-9kW">
-                                                    <rect key="frame" x="0.0" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-1" y="136" width="376" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="00" translatesAutoresizingMaskIntoConstraints="NO" id="qkQ-5f-iMT">
-                                                    <rect key="frame" x="0.0" y="8" width="128" height="130"/>
+                                                    <rect key="frame" x="-1" y="8" width="129" height="129"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2r-PB-m7H">
-                                                    <rect key="frame" x="143" y="8" width="224" height="130"/>
+                                                    <rect key="frame" x="143" y="8" width="223" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Estimador del Precio de Venta conociendo el Porcentaje de Margen de Utilidad deseado.		</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -393,16 +397,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7cT-QD-vit">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-2s-Czj">
-                                                    <rect key="frame" x="-2" y="5" width="130" height="131"/>
+                                                    <rect key="frame" x="-3" y="4" width="131" height="131"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn6-Ba-Uku">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Cálculo del Precio de Venta conociendo el Porcentaje de Gastos de Operación y el porcentaje de Margen de Utilidad deseado.	</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -424,16 +428,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="rhQ-lR-xtE">
-                                                    <rect key="frame" x="-2" y="5" width="130" height="132"/>
+                                                    <rect key="frame" x="-3" y="4" width="131" height="132"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q82-Kb-8aD">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimador del Punto de Equilibrio en Dinero (Dinero que es necesario vender para sostener la operación)" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKq-Su-5cf">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -454,19 +458,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keh-UD-AdO">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimador del Punto de Equilibrio en Unidades (Número de unidades mínimas a vender para sostener la operación)." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcL-di-h3z">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="H1j-gH-wV5">
-                                                    <rect key="frame" x="-2" y="4" width="130" height="131"/>
+                                                    <rect key="frame" x="-3" y="4" width="131" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -484,16 +488,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="04" translatesAutoresizingMaskIntoConstraints="NO" id="czN-Bb-kHq">
-                                                    <rect key="frame" x="-2" y="4" width="130" height="131"/>
+                                                    <rect key="frame" x="-3" y="3" width="131" height="131"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EK4-nz-gPx">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimador del Nivel de Ventas con Utilidad sobre las mismas Ventas." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWs-WQ-ZcA">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -514,16 +518,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="05" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-YH-ayd">
-                                                    <rect key="frame" x="-2" y="6" width="130" height="129"/>
+                                                    <rect key="frame" x="-3" y="6" width="131" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGC-NX-mv5">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimador del Nivel de Ventas con Utilidad sobre las mismas Ventas y Pagando Royalties de una Franquicia." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfx-Fv-Flq">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -544,16 +548,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-cq-aEO">
-                                                    <rect key="frame" x="-2" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-3" y="136" width="375" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06" translatesAutoresizingMaskIntoConstraints="NO" id="BFs-CH-8SI">
-                                                    <rect key="frame" x="-2" y="6" width="130" height="131"/>
+                                                    <rect key="frame" x="-3" y="6" width="131" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ev-aR-FJg">
-                                                    <rect key="frame" x="140" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="224" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Estimador del Umbral de Ventas para poder Conceder un Descuento.	</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -575,16 +579,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="07" translatesAutoresizingMaskIntoConstraints="NO" id="UqF-JJ-wwt">
-                                                    <rect key="frame" x="-1" y="6" width="129" height="132"/>
+                                                    <rect key="frame" x="-1" y="5" width="129" height="133"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9h-nA-3gB">
-                                                    <rect key="frame" x="-1" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-1" y="136" width="374" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6i-Mu-1fm">
-                                                    <rect key="frame" x="141" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="226" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Umbral de ventas para pagar una Actividad de Trade Marketing	</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -606,16 +610,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-4i-AHr">
-                                                    <rect key="frame" x="-1" y="6" width="129" height="131"/>
+                                                    <rect key="frame" x="-1" y="5" width="129" height="131"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epm-5w-aHv">
-                                                    <rect key="frame" x="-1" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-1" y="136" width="374" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimador del Umbral Mínimo de Ventas cuando la Compañía decide emprender un alza en sus precios y la competencia no lo hace." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-mb-v7X">
-                                                    <rect key="frame" x="141" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="226" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -636,16 +640,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yT-xq-Ewc">
-                                                    <rect key="frame" x="-1" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-1" y="136" width="374" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="09" translatesAutoresizingMaskIntoConstraints="NO" id="vWD-zb-ndk">
-                                                    <rect key="frame" x="-1" y="6" width="129" height="129"/>
+                                                    <rect key="frame" x="-1" y="5" width="129" height="129"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-tL-hP6">
-                                                    <rect key="frame" x="141" y="9" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="9" width="226" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Cálculo de presupuesto de Ventas, conociendo Gtos Anuales, Impuesto de Renta, Rentab. Patrimonial Esperada y Gtos Financieros Anuales.</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
@@ -667,18 +671,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cálculo de Ppto de Vtas, conociendo Gtos Anuales, Impuesto de Renta y Gtos Financieros como porcentaje de Utilidad " lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-fd-l6s">
-                                                    <rect key="frame" x="141" y="8" width="225" height="130"/>
+                                                    <rect key="frame" x="140" y="8" width="226" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.019607843140000001" green="0.0" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="rux-qf-yey">
-                                                    <rect key="frame" x="-1" y="5" width="129" height="132"/>
+                                                    <rect key="frame" x="-1" y="4" width="129" height="133"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiJ-Ea-EVN">
-                                                    <rect key="frame" x="-1" y="136" width="375" height="12"/>
+                                                    <rect key="frame" x="-1" y="136" width="374" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -1363,10 +1367,10 @@
             </objects>
             <point key="canvasLocation" x="4001" y="-648"/>
         </scene>
-        <!--View Controller-->
+        <!--Formula Two View-->
         <scene sceneID="hJP-jx-F7M">
             <objects>
-                <viewController id="t1O-SK-nPt" sceneMemberID="viewController">
+                <viewController id="t1O-SK-nPt" customClass="FormulaTwoView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ldv-rU-uG2"/>
                         <viewControllerLayoutGuide type="bottom" id="0SC-ix-oNN"/>
@@ -1444,6 +1448,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="claculateFormulaTwo:" destination="t1O-SK-nPt" eventType="touchUpInside" id="lhC-Yt-FzU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNZ-cv-Yb9" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                 <rect key="frame" x="16" y="444" width="162" height="40"/>
@@ -1458,6 +1465,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="claculateFormulaTwo:" destination="t1O-SK-nPt" eventType="touchUpInside" id="jca-FH-nEf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-Cs-LiH">
                                 <rect key="frame" x="157" y="222" width="21" height="24"/>
@@ -1486,6 +1496,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveFormulasList:" destination="t1O-SK-nPt" eventType="touchUpInside" id="fhE-T1-fzn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor los Gastos Totales del Punto de Venta (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8k-wf-4Ia">
                                 <rect key="frame" x="16" y="36" width="343" height="44"/>
@@ -1499,37 +1512,44 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="504"/>
+                    <connections>
+                        <outlet property="averageGrossMargin" destination="NHx-aa-Dqp" id="wxe-Aw-nXq"/>
+                        <outlet property="operationalExpenses" destination="7t9-xV-rii" id="Lhu-A8-t8g"/>
+                        <outlet property="resultFormula" destination="Cvy-fG-V2A" id="I2T-tg-Xs9"/>
+                        <outlet property="saveFormules" destination="9ev-cj-u9i" id="Aul-va-d4M"/>
+                        <outlet property="transitionButton" destination="LNZ-cv-Yb9" id="h1T-Oo-U0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV5-XL-O03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4673" y="-649"/>
         </scene>
-        <!--View Controller-->
+        <!--Formula Three View-->
         <scene sceneID="OKe-v6-9M2">
             <objects>
-                <viewController id="6ii-LN-c39" sceneMemberID="viewController">
+                <viewController id="6ii-LN-c39" customClass="FormulaThreeView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7b9-6N-MfN"/>
                         <viewControllerLayoutGuide type="bottom" id="Lsb-Ue-PhZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R6P-nC-GoG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Wl-bi4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-Wl-bi4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor los Gastos Totales del Punto de Venta (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="How-D2-97J">
-                                        <rect key="frame" x="16" y="8" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese por favor los Gastos Totales del Punto de Venta (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="How-D2-97J">
+                                        <rect key="frame" x="16" y="12" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="LH6-Xz-n7U"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 75000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-Az-UnM" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                        <rect key="frame" x="16" y="60" width="343" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 75000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-Az-UnM" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="16" y="64" width="343" height="40"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -1551,16 +1571,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor el Margen Bruto Promedio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPJ-1O-5hD">
-                                        <rect key="frame" x="16" y="108" width="343" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-Gl-lLw" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                        <rect key="frame" x="16" y="154" width="112" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-Gl-lLw" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="16" y="152" width="112" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CF7-B6-C0p"/>
+                                            <constraint firstAttribute="width" constant="112" id="X0J-pn-Xoc"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -1579,45 +1595,56 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUC-mn-Co0">
-                                        <rect key="frame" x="134" y="173" width="22" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 1500" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycu-kl-eOE" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="16" y="256" width="344" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zd1-UM-16J"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese por favor el Margen Bruto Promedio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPJ-1O-5hD">
+                                        <rect key="frame" x="16" y="126" width="343" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="NGN-mn-FWh"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor el Precio Promedio de cada Unidad (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-KF-1Jz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUC-mn-Co0">
+                                        <rect key="frame" x="134" y="171" width="14" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese por favor el Precio Promedio de cada Unidad (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-KF-1Jz">
                                         <rect key="frame" x="16" y="204" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 1500" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycu-kl-eOE" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                        <rect key="frame" x="16" y="256" width="341" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                <color key="value" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuC-sd-VHX" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
-                                        <rect key="frame" x="95" y="318" width="185" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuC-sd-VHX" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="319" width="195" height="40"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f8S-pU-rVv"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Calcular"/>
@@ -1626,70 +1653,158 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaThree:" destination="6ii-LN-c39" eventType="touchUpInside" id="H5P-F4-wbe"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Punto de Equilibrio Calculado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-Hr-WEv">
-                                        <rect key="frame" x="17" y="375" width="341" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punto de Equilibrio Calculado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-Hr-WEv">
+                                        <rect key="frame" x="16" y="385" width="341" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEa-ll-er7">
-                                        <rect key="frame" x="18" y="392" width="341" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEa-ll-er7">
+                                        <rect key="frame" x="19" y="411" width="341" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="sUz-9W-RDj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Punto de Equilibrio Calculado en Unidades:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk1-yW-Kjo">
-                                        <rect key="frame" x="15" y="424" width="344" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punto de Equilibrio Calculado en Unidades:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk1-yW-Kjo">
+                                        <rect key="frame" x="16" y="448" width="344" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Pb-Whc" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="513" width="162" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Pb-Whc" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="516" width="166" height="40"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="x0O-EI-qFX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Prueba">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaThree:" destination="6ii-LN-c39" eventType="touchUpInside" id="eMd-Kl-BwQ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0zf-Nv-kIM" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
-                                        <rect key="frame" x="196" y="513" width="163" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0zf-Nv-kIM" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="516" width="159" height="40"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="159" id="5DG-ND-waf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Guardar Resultado">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveFormulasList:" destination="6ii-LN-c39" eventType="touchUpInside" id="S15-2T-JfF"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKI-44-PNP">
-                                        <rect key="frame" x="18" y="455" width="341" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKI-44-PNP">
+                                        <rect key="frame" x="18" y="474" width="341" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4yP-p3-HmL"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="0zf-Nv-kIM" firstAttribute="leading" secondItem="4b7-Pb-Whc" secondAttribute="trailing" constant="18" id="0Rn-dy-3Rt"/>
+                                    <constraint firstItem="PO0-Hr-WEv" firstAttribute="top" secondItem="OuC-sd-VHX" secondAttribute="bottom" constant="26" id="0lK-6s-ji3"/>
+                                    <constraint firstItem="kdF-Az-UnM" firstAttribute="centerX" secondItem="qrj-Wl-bi4" secondAttribute="centerX" id="4iR-WO-aAH"/>
+                                    <constraint firstItem="4b7-Pb-Whc" firstAttribute="baseline" secondItem="0zf-Nv-kIM" secondAttribute="firstBaseline" id="59y-7z-ScO"/>
+                                    <constraint firstAttribute="trailing" secondItem="OuC-sd-VHX" secondAttribute="trailing" constant="90" id="7Iy-b7-shF"/>
+                                    <constraint firstItem="4b7-Pb-Whc" firstAttribute="leading" secondItem="How-D2-97J" secondAttribute="leading" id="8Ad-2e-hWJ"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="trailing" secondItem="Ehu-KF-1Jz" secondAttribute="trailing" id="8kd-CT-Yht"/>
+                                    <constraint firstItem="PO0-Hr-WEv" firstAttribute="leading" secondItem="qrj-Wl-bi4" secondAttribute="leading" constant="16" id="EAn-ce-XqK"/>
+                                    <constraint firstItem="0zf-Nv-kIM" firstAttribute="top" secondItem="DKI-44-PNP" secondAttribute="bottom" constant="21" id="FSc-W9-cNW"/>
+                                    <constraint firstItem="ycu-kl-eOE" firstAttribute="top" secondItem="Ehu-KF-1Jz" secondAttribute="bottom" constant="8" symbolic="YES" id="GwH-vj-P8L"/>
+                                    <constraint firstItem="DKI-44-PNP" firstAttribute="trailing" secondItem="Ehu-KF-1Jz" secondAttribute="trailing" id="IYR-XQ-rez"/>
+                                    <constraint firstItem="DKI-44-PNP" firstAttribute="trailing" secondItem="How-D2-97J" secondAttribute="trailing" id="MUf-Tg-0nl"/>
+                                    <constraint firstItem="kdF-Az-UnM" firstAttribute="top" secondItem="How-D2-97J" secondAttribute="bottom" constant="8" symbolic="YES" id="OFx-DY-Nw3"/>
+                                    <constraint firstItem="4b7-Pb-Whc" firstAttribute="leading" secondItem="Ehu-KF-1Jz" secondAttribute="leading" id="QNJ-Gx-NfQ"/>
+                                    <constraint firstItem="OEa-ll-er7" firstAttribute="leading" secondItem="qrj-Wl-bi4" secondAttribute="leading" constant="19" id="QSH-Rf-lKX"/>
+                                    <constraint firstItem="OuC-sd-VHX" firstAttribute="leading" secondItem="qrj-Wl-bi4" secondAttribute="leading" constant="90" id="Se4-5m-9kY"/>
+                                    <constraint firstItem="4b7-Pb-Whc" firstAttribute="top" secondItem="0zf-Nv-kIM" secondAttribute="top" id="SiZ-qH-Hfe"/>
+                                    <constraint firstItem="BUC-mn-Co0" firstAttribute="leading" secondItem="AVc-Gl-lLw" secondAttribute="trailing" constant="6" id="VbD-0y-sFP"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="trailing" secondItem="kdF-Az-UnM" secondAttribute="trailing" id="Z8A-Xu-ANR"/>
+                                    <constraint firstAttribute="bottom" secondItem="4b7-Pb-Whc" secondAttribute="bottom" constant="14" id="Zct-v2-jgM"/>
+                                    <constraint firstItem="PO0-Hr-WEv" firstAttribute="leading" secondItem="Fk1-yW-Kjo" secondAttribute="leading" id="bkF-cd-E8v"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="top" secondItem="qrj-Wl-bi4" secondAttribute="top" constant="126" id="blX-6S-xnZ"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="leading" secondItem="kdF-Az-UnM" secondAttribute="leading" id="cLe-0O-sc1"/>
+                                    <constraint firstItem="Fk1-yW-Kjo" firstAttribute="centerX" secondItem="Ehu-KF-1Jz" secondAttribute="centerX" id="d5t-pi-EW3"/>
+                                    <constraint firstItem="AVc-Gl-lLw" firstAttribute="top" secondItem="lPJ-1O-5hD" secondAttribute="bottom" constant="6" id="dPM-Hx-Fsy"/>
+                                    <constraint firstItem="OEa-ll-er7" firstAttribute="trailing" secondItem="Fk1-yW-Kjo" secondAttribute="trailing" id="dvp-nh-k19"/>
+                                    <constraint firstItem="OEa-ll-er7" firstAttribute="trailing" secondItem="ycu-kl-eOE" secondAttribute="trailing" id="eaf-Y9-Rzi"/>
+                                    <constraint firstItem="Ehu-KF-1Jz" firstAttribute="top" secondItem="AVc-Gl-lLw" secondAttribute="bottom" constant="12" id="hAg-L4-a09"/>
+                                    <constraint firstItem="Fk1-yW-Kjo" firstAttribute="centerX" secondItem="OuC-sd-VHX" secondAttribute="centerX" id="hpu-0L-EO7"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="top" secondItem="kdF-Az-UnM" secondAttribute="bottom" constant="22" id="isp-8j-aw5"/>
+                                    <constraint firstItem="AVc-Gl-lLw" firstAttribute="leading" secondItem="Ehu-KF-1Jz" secondAttribute="leading" id="jRg-G7-1Sq"/>
+                                    <constraint firstItem="Fk1-yW-Kjo" firstAttribute="centerX" secondItem="DKI-44-PNP" secondAttribute="centerX" id="k4V-Ji-cpi"/>
+                                    <constraint firstItem="lPJ-1O-5hD" firstAttribute="leading" secondItem="AVc-Gl-lLw" secondAttribute="leading" id="kYn-IA-zDs"/>
+                                    <constraint firstItem="ycu-kl-eOE" firstAttribute="top" secondItem="qrj-Wl-bi4" secondAttribute="top" constant="256" id="muO-ZU-BCt"/>
+                                    <constraint firstItem="DKI-44-PNP" firstAttribute="top" secondItem="Fk1-yW-Kjo" secondAttribute="bottom" constant="8" symbolic="YES" id="nsU-PJ-D3b"/>
+                                    <constraint firstAttribute="trailing" secondItem="PO0-Hr-WEv" secondAttribute="trailing" constant="18" id="oBa-y8-wQT"/>
+                                    <constraint firstItem="AVc-Gl-lLw" firstAttribute="bottom" secondItem="BUC-mn-Co0" secondAttribute="bottom" id="qjo-vE-uPq"/>
+                                    <constraint firstItem="0zf-Nv-kIM" firstAttribute="baseline" secondItem="4b7-Pb-Whc" secondAttribute="firstBaseline" id="rBK-96-AQh"/>
+                                    <constraint firstItem="OEa-ll-er7" firstAttribute="top" secondItem="PO0-Hr-WEv" secondAttribute="bottom" constant="8" symbolic="YES" id="rxb-1y-mb7"/>
+                                    <constraint firstItem="Fk1-yW-Kjo" firstAttribute="leading" secondItem="4b7-Pb-Whc" secondAttribute="leading" id="sbc-Gy-Cb8"/>
+                                    <constraint firstItem="OuC-sd-VHX" firstAttribute="top" secondItem="ycu-kl-eOE" secondAttribute="bottom" constant="23" id="tuZ-7I-Qt3"/>
+                                    <constraint firstItem="How-D2-97J" firstAttribute="top" secondItem="qrj-Wl-bi4" secondAttribute="top" constant="12" id="u6t-VJ-gqC"/>
+                                    <constraint firstItem="4b7-Pb-Whc" firstAttribute="leading" secondItem="ycu-kl-eOE" secondAttribute="leading" id="up3-pI-ZFn"/>
+                                    <constraint firstItem="DKI-44-PNP" firstAttribute="trailing" secondItem="0zf-Nv-kIM" secondAttribute="trailing" id="wsW-me-RRr"/>
+                                    <constraint firstItem="Fk1-yW-Kjo" firstAttribute="top" secondItem="OEa-ll-er7" secondAttribute="bottom" constant="16" id="x7d-hg-vh2"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qrj-Wl-bi4" firstAttribute="width" secondItem="R6P-nC-GoG" secondAttribute="width" id="2UR-sJ-a8b"/>
+                            <constraint firstItem="qrj-Wl-bi4" firstAttribute="centerY" secondItem="R6P-nC-GoG" secondAttribute="centerY" id="4YN-ED-Qwt"/>
+                            <constraint firstItem="qrj-Wl-bi4" firstAttribute="height" secondItem="R6P-nC-GoG" secondAttribute="height" id="ViQ-A5-PyK"/>
+                            <constraint firstItem="qrj-Wl-bi4" firstAttribute="centerX" secondItem="R6P-nC-GoG" secondAttribute="centerX" id="ow7-sd-ZlJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IRm-ye-UzH"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="567"/>
+                    <size key="freeformSize" width="375" height="570"/>
+                    <connections>
+                        <outlet property="averageGrossMargin" destination="AVc-Gl-lLw" id="zcU-2d-U8a"/>
+                        <outlet property="operationalExpenses" destination="kdF-Az-UnM" id="J5n-18-tqI"/>
+                        <outlet property="priceByUnit" destination="ycu-kl-eOE" id="LDl-i6-FUY"/>
+                        <outlet property="resultFormula" destination="OEa-ll-er7" id="0aZ-Ra-k3z"/>
+                        <outlet property="saveFormulas" destination="0zf-Nv-kIM" id="9vZ-aB-YQX"/>
+                        <outlet property="scrollView" destination="qrj-Wl-bi4" id="il4-Ew-21z"/>
+                        <outlet property="secondFormulaResult" destination="DKI-44-PNP" id="YWx-3E-eXf"/>
+                        <outlet property="transitionButton" destination="4b7-Pb-Whc" id="cT7-fx-da2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHC-9s-Dfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3325.5999999999999" y="-114.69265367316342"/>
+            <point key="canvasLocation" x="3325.5999999999999" y="-115.14242878560721"/>
         </scene>
-        <!--View Controller-->
+        <!--Formula Four View-->
         <scene sceneID="eqp-NN-UoT">
             <objects>
-                <viewController id="ewY-Ze-VPh" sceneMemberID="viewController">
+                <viewController id="ewY-Ze-VPh" customClass="FormulaFourView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KOE-h3-0a2"/>
                         <viewControllerLayoutGuide type="bottom" id="4K7-2n-cni"/>
@@ -1804,6 +1919,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateFormulaFour:" destination="ewY-Ze-VPh" eventType="touchUpInside" id="lsQ-sS-dZJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-bp-QXU">
                                 <rect key="frame" x="134" y="291" width="22" height="21"/>
@@ -1825,6 +1943,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateFormulaFour:" destination="ewY-Ze-VPh" eventType="touchUpInside" id="olK-pW-3Ux"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="z2o-7i-7nd" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                 <rect key="frame" x="196" y="507" width="163" height="40"/>
@@ -1839,6 +1960,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveFormulasList:" destination="ewY-Ze-VPh" eventType="touchUpInside" id="euO-qe-iy2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIg-ho-yqJ">
                                 <rect key="frame" x="20" y="394" width="341" height="21"/>
@@ -1860,15 +1984,23 @@
                     <navigationItem key="navigationItem" id="rVd-aG-EBM"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="567"/>
+                    <connections>
+                        <outlet property="averageGrossMargin" destination="Ls2-mm-vxR" id="yXQ-5j-hca"/>
+                        <outlet property="desiredUtility" destination="vHV-Df-jcI" id="DWO-Su-g32"/>
+                        <outlet property="operationalExpenses" destination="lF7-2V-IVi" id="E5U-Z0-9JH"/>
+                        <outlet property="resultFormula" destination="AIg-ho-yqJ" id="w4f-qP-22N"/>
+                        <outlet property="saveFormules" destination="z2o-7i-7nd" id="m2J-FU-LbX"/>
+                        <outlet property="transitionButton" destination="X9O-8f-PMH" id="jEW-sq-aN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwh-ej-ibs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4001" y="-113"/>
         </scene>
-        <!--View Controller-->
+        <!--Formula Five View-->
         <scene sceneID="Jss-KQ-wvs">
             <objects>
-                <viewController id="AJC-jt-maT" sceneMemberID="viewController">
+                <viewController id="AJC-jt-maT" customClass="FormulaFiveView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YPG-sx-vgs"/>
                         <viewControllerLayoutGuide type="bottom" id="cW3-zp-QGN"/>
@@ -1877,9 +2009,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-Vd-MdF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-Vd-MdF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor el Costo Total del Producto o Servicio (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAI-mJ-rZI">
                                         <rect key="frame" x="16" y="8" width="343" height="44"/>
@@ -2022,10 +2153,13 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaFive:" destination="AJC-jt-maT" eventType="touchUpInside" id="mBU-UR-xcF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMM-5c-QyH" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                         <rect key="frame" x="16" y="612" width="162" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Prueba">
@@ -2036,10 +2170,13 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaFive:" destination="AJC-jt-maT" eventType="touchUpInside" id="4bA-TM-mjB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NR7-if-DAr" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                         <rect key="frame" x="196" y="612" width="163" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Guardar Resultado">
@@ -2050,6 +2187,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveFormulasList:" destination="AJC-jt-maT" eventType="touchUpInside" id="pMq-vT-Vxy"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor el Valor de Royalties Franquicia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3z-JG-1qj">
                                         <rect key="frame" x="16" y="313" width="343" height="44"/>
@@ -2059,14 +2199,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-0Q-vCh">
-                                        <rect key="frame" x="18" y="504" width="341" height="21"/>
+                                        <rect key="frame" x="18" y="529" width="341" height="21"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ventas Presupuestadas Calculadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42u-BZ-dcC">
-                                        <rect key="frame" x="18" y="485" width="341" height="18"/>
+                                        <rect key="frame" x="18" y="503" width="341" height="18"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -2076,19 +2216,35 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PaL-Vd-MdF" firstAttribute="centerY" secondItem="A4f-Cq-9ZW" secondAttribute="centerY" id="5TN-vg-aQZ"/>
+                            <constraint firstItem="PaL-Vd-MdF" firstAttribute="width" secondItem="A4f-Cq-9ZW" secondAttribute="width" id="R3w-Nw-1bl"/>
+                            <constraint firstItem="PaL-Vd-MdF" firstAttribute="height" secondItem="A4f-Cq-9ZW" secondAttribute="height" id="Ze2-rD-orh"/>
+                            <constraint firstItem="PaL-Vd-MdF" firstAttribute="centerX" secondItem="A4f-Cq-9ZW" secondAttribute="centerX" id="w4M-fx-NwW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dud-BI-ma7"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="averageGrossMargin" destination="uzm-W1-XDw" id="WTS-Br-vH4"/>
+                        <outlet property="desiredUtility" destination="PqN-Ra-bQ8" id="Akr-ib-Cbu"/>
+                        <outlet property="operationalExpenses" destination="nhX-Zi-8QR" id="Ric-Sy-717"/>
+                        <outlet property="resultFormula" destination="Jnt-0Q-vCh" id="RYg-vi-WB1"/>
+                        <outlet property="saveFormules" destination="NR7-if-DAr" id="Nfn-tt-3ku"/>
+                        <outlet property="scrollView" destination="PaL-Vd-MdF" id="gp5-om-nKy"/>
+                        <outlet property="transitionButton" destination="BMM-5c-QyH" id="RX3-Pu-MCt"/>
+                        <outlet property="valueRoyalties" destination="UF8-4A-WEM" id="nWR-ky-s2o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruD-dX-hSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4673" y="-69"/>
         </scene>
-        <!--Formula Detail View Controller-->
+        <!--Formula Sevent View-->
         <scene sceneID="e2f-Vd-JjY">
             <objects>
-                <viewController id="nfL-dD-dsA" customClass="FormulaDetailViewController" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nfL-dD-dsA" customClass="FormulaSeventView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6TG-te-jT2"/>
                         <viewControllerLayoutGuide type="bottom" id="Zve-Ah-8f3"/>
@@ -2534,6 +2690,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaSeven:" destination="nfL-dD-dsA" eventType="touchUpInside" id="T8F-jd-kkk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1ZA-rh-eGg" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                         <rect key="frame" x="199" y="1174" width="163" height="40"/>
@@ -2568,6 +2727,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaSeven:" destination="nfL-dD-dsA" eventType="touchUpInside" id="82Y-Qb-SxI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -2577,6 +2739,27 @@
                     <navigationItem key="navigationItem" id="nbl-N7-Sw1"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1230"/>
+                    <connections>
+                        <outlet property="actAidTransport" destination="5Vf-SU-Uvv" id="s80-kW-A71"/>
+                        <outlet property="actCustomerAwars" destination="3J2-1T-V2o" id="WPO-Rx-vgm"/>
+                        <outlet property="actFurnitureCost" destination="JGw-1Q-X2e" id="mWn-Ld-LzG"/>
+                        <outlet property="actOther" destination="wRR-xb-Onv" id="Uxu-ht-xwm"/>
+                        <outlet property="actPersonal" destination="3iH-37-uKA" id="Lrb-0T-vjI"/>
+                        <outlet property="actPricebyUnityDiscount" destination="DGV-oi-yle" id="ddA-Sk-Vea"/>
+                        <outlet property="actTastings" destination="Ue4-ad-saj" id="eRA-Bx-e1y"/>
+                        <outlet property="actUniform" destination="RtI-zu-h3i" id="uiB-fa-ken"/>
+                        <outlet property="actoverTimeCharge" destination="MUO-Bb-3fD" id="Ysh-cK-Pdv"/>
+                        <outlet property="averageGrossMargin" destination="jgM-ng-peI" id="iIj-4n-4kj"/>
+                        <outlet property="averageSalesByUnity" destination="Fhp-Oh-hWn" id="eGi-4N-kCW"/>
+                        <outlet property="costFormulaResult" destination="5eK-uT-GCW" id="kD4-YF-LiW"/>
+                        <outlet property="fourFormulaResul" destination="lOM-1A-f1F" id="BXv-uj-kZv"/>
+                        <outlet property="newCostFormulaResult" destination="wHh-gP-G93" id="3mQ-mI-zXl"/>
+                        <outlet property="resultFormula" destination="2NI-cs-Sij" id="uDW-E6-gGo"/>
+                        <outlet property="saveFormules" destination="1ZA-rh-eGg" id="aLH-Jn-PdF"/>
+                        <outlet property="secondFormulaResult" destination="FLa-4E-BCD" id="td7-IH-woi"/>
+                        <outlet property="subtotalAct" destination="9jQ-Pi-u7J" id="BcR-IY-eIl"/>
+                        <outlet property="thirdFormulaResult" destination="ySY-5Z-l5r" id="Hp1-3J-Wsw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFz-4N-Irt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3099,10 +3282,10 @@
             </objects>
             <point key="canvasLocation" x="4673" y="636"/>
         </scene>
-        <!--View Controller-->
+        <!--Formulas Six View-->
         <scene sceneID="3HZ-ab-5Rg">
             <objects>
-                <viewController id="oKC-J5-dlY" sceneMemberID="viewController">
+                <viewController id="oKC-J5-dlY" customClass="FormulasSixView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Yr-vF-Qxq"/>
                         <viewControllerLayoutGuide type="bottom" id="ydt-T0-Bu6"/>
@@ -3111,20 +3294,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-Qg-xnW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-Qg-xnW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingrese por favor las Ventas promedio en unidades en el período (En Unidades)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHe-Jj-YYj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese por favor las Ventas promedio en unidades en el período (En Unidades)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHe-Jj-YYj">
                                         <rect key="frame" x="16" y="8" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0ch-Ws-Kpt"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 75000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0O-fm-Rmv" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 75000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0O-fm-Rmv" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="16" y="56" width="343" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Mpi-aI-Vak"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -3146,16 +3332,20 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Margen Bruto Promedio obtenido en el período" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-ra-hpK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margen Bruto Promedio obtenido en el período" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-ra-hpK">
                                         <rect key="frame" x="16" y="104" width="343" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Z1q-lX-xSn"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-rM-9do" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-rM-9do" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="16" y="157" width="112" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="3bF-De-OPT"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -3174,23 +3364,26 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-xf-mAf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-xf-mAf">
                                         <rect key="frame" x="134" y="176" width="22" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="9JQ-ng-zsr"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porcentaje de descuento solicitado o a conceder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-WX-cFD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porcentaje de descuento solicitado o a conceder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-WX-cFD">
                                         <rect key="frame" x="16" y="210" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CZi-0N-iEH"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-0f-24x" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-0f-24x" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="16" y="260" width="112" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -3209,16 +3402,20 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxm-Hh-wgQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxm-Hh-wgQ">
                                         <rect key="frame" x="133" y="278" width="22" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="7OV-Ie-vSI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BuV-dr-WMV" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Ejm: 50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BuV-dr-WMV" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="16" y="365" width="343" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Srd-Zo-OCz"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
@@ -3237,10 +3434,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azq-TO-GlJ" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azq-TO-GlJ" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
                                         <rect key="frame" x="95" y="428" width="185" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zqH-cf-5OV"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Calcular"/>
@@ -3249,11 +3448,16 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaSix:" destination="oKC-J5-dlY" eventType="touchUpInside" id="RaH-xz-8Ye"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-Of-h7l" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="695" width="162" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-Of-h7l" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="695" width="186" height="40"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9jM-H6-97b"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Prueba">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3263,11 +3467,16 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateFormulaSix:" destination="oKC-J5-dlY" eventType="touchUpInside" id="nEo-Pd-lWa"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rOK-WM-f4j" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
-                                        <rect key="frame" x="196" y="695" width="163" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rOK-WM-f4j" customClass="UIButtonR" customModule="Esteemator_Pro" customModuleProvider="target">
+                                        <rect key="frame" x="210" y="695" width="149" height="40"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rOK-WM-f4j" secondAttribute="height" multiplier="149:40" id="dRQ-9b-Ca9"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Guardar Resultado">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3277,68 +3486,153 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveFormulasList:" destination="oKC-J5-dlY" eventType="touchUpInside" id="0zl-Oe-k8S"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Precio de la unidad antes de conceder el descuento (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv9-9c-4ah">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio de la unidad antes de conceder el descuento (En su Moneda)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv9-9c-4ah">
                                         <rect key="frame" x="16" y="313" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="9xG-2V-bjt"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOc-Nc-RJy">
-                                        <rect key="frame" x="18" y="535" width="341" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umbral de ventas requerido para pagar el descuento a conceder (En Unidades)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-9I-1cl">
+                                        <rect key="frame" x="16" y="491" width="343" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOc-Nc-RJy">
+                                        <rect key="frame" x="18" y="548" width="341" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Umbral de ventas requerido para pagar el descuento a conceder (En Unidades)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-9I-1cl">
-                                        <rect key="frame" x="16" y="491" width="343" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo Precio de la Unidad (Calculado)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="VB1-Ew-3aM">
+                                        <rect key="frame" x="16" y="577" width="343" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="6sn-NN-6GJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nuevo Precio de la Unidad (Calculado)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB1-Ew-3aM">
-                                        <rect key="frame" x="16" y="559" width="343" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costo de la unidad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="yAJ-sg-uLL">
+                                        <rect key="frame" x="16" y="630" width="343" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="FAh-vF-afS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Costo de la unidad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAJ-sg-uLL">
-                                        <rect key="frame" x="16" y="612" width="343" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faW-kj-YQq">
-                                        <rect key="frame" x="18" y="585" width="341" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faW-kj-YQq">
+                                        <rect key="frame" x="18" y="605" width="341" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFw-AF-vCT">
-                                        <rect key="frame" x="18" y="635" width="341" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFw-AF-vCT">
+                                        <rect key="frame" x="18" y="653" width="341" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="azq-TO-GlJ" firstAttribute="top" secondItem="BuV-dr-WMV" secondAttribute="bottom" constant="23" id="0jI-bP-TDZ"/>
+                                    <constraint firstItem="VB1-Ew-3aM" firstAttribute="trailing" secondItem="faW-kj-YQq" secondAttribute="trailing" id="1gl-7z-Kln"/>
+                                    <constraint firstItem="SHe-Jj-YYj" firstAttribute="leading" secondItem="Uqh-Qg-xnW" secondAttribute="leading" constant="16" id="2s9-f3-9xF"/>
+                                    <constraint firstItem="oxm-Hh-wgQ" firstAttribute="leading" secondItem="hgJ-0f-24x" secondAttribute="trailing" constant="5" id="3dz-uG-d0V"/>
+                                    <constraint firstItem="bVr-9I-1cl" firstAttribute="top" secondItem="azq-TO-GlJ" secondAttribute="bottom" constant="23" id="4Ct-dQ-IBs"/>
+                                    <constraint firstItem="hgJ-0f-24x" firstAttribute="top" secondItem="2Iq-WX-cFD" secondAttribute="bottom" constant="6" id="4El-Cm-mzN"/>
+                                    <constraint firstItem="bVr-9I-1cl" firstAttribute="leading" secondItem="BuV-dr-WMV" secondAttribute="leading" id="4ny-Bj-D28"/>
+                                    <constraint firstItem="SHe-Jj-YYj" firstAttribute="trailing" secondItem="Y0O-fm-Rmv" secondAttribute="trailing" id="6XG-5t-yoA"/>
+                                    <constraint firstItem="faW-kj-YQq" firstAttribute="trailing" secondItem="yAJ-sg-uLL" secondAttribute="trailing" id="871-br-NWo"/>
+                                    <constraint firstItem="azq-TO-GlJ" firstAttribute="leading" secondItem="Uqh-Qg-xnW" secondAttribute="leading" constant="95" id="8Lr-Y4-Ye5"/>
+                                    <constraint firstItem="faW-kj-YQq" firstAttribute="leading" secondItem="oFw-AF-vCT" secondAttribute="leading" id="8Vh-ye-nif"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="trailing" secondItem="oFw-AF-vCT" secondAttribute="trailing" id="9Dm-dm-wRx"/>
+                                    <constraint firstItem="pwG-rM-9do" firstAttribute="bottom" secondItem="dBM-xf-mAf" secondAttribute="bottom" id="AAY-yw-bUJ"/>
+                                    <constraint firstItem="SHe-Jj-YYj" firstAttribute="leading" secondItem="Y0O-fm-Rmv" secondAttribute="leading" id="BUz-Gv-Hkx"/>
+                                    <constraint firstItem="qOc-Nc-RJy" firstAttribute="trailing" secondItem="VB1-Ew-3aM" secondAttribute="trailing" id="Bg8-6w-isr"/>
+                                    <constraint firstItem="Y0O-fm-Rmv" firstAttribute="leading" secondItem="2ow-ra-hpK" secondAttribute="leading" id="Cf9-os-QOT"/>
+                                    <constraint firstItem="oxm-Hh-wgQ" firstAttribute="top" secondItem="2Iq-WX-cFD" secondAttribute="bottom" constant="24" id="DMM-c6-2V3"/>
+                                    <constraint firstItem="bVr-9I-1cl" firstAttribute="trailing" secondItem="BuV-dr-WMV" secondAttribute="trailing" id="Dbx-tO-O4R"/>
+                                    <constraint firstItem="2ow-ra-hpK" firstAttribute="leading" secondItem="pwG-rM-9do" secondAttribute="leading" id="DtW-Yo-aVb"/>
+                                    <constraint firstAttribute="bottom" secondItem="BEe-Of-h7l" secondAttribute="bottom" constant="15" id="E0P-GT-UcT"/>
+                                    <constraint firstItem="2ow-ra-hpK" firstAttribute="top" secondItem="Y0O-fm-Rmv" secondAttribute="bottom" constant="8" symbolic="YES" id="HH4-BB-iqZ"/>
+                                    <constraint firstItem="yAJ-sg-uLL" firstAttribute="top" secondItem="faW-kj-YQq" secondAttribute="bottom" constant="4" id="J4r-Am-YU1"/>
+                                    <constraint firstItem="Y0O-fm-Rmv" firstAttribute="top" secondItem="SHe-Jj-YYj" secondAttribute="bottom" constant="4" id="JIv-4z-GyY"/>
+                                    <constraint firstItem="VB1-Ew-3aM" firstAttribute="top" secondItem="bVr-9I-1cl" secondAttribute="bottom" constant="26" id="Ld9-3F-LTZ"/>
+                                    <constraint firstItem="bVr-9I-1cl" firstAttribute="trailing" secondItem="qOc-Nc-RJy" secondAttribute="trailing" id="Nig-yh-ltU"/>
+                                    <constraint firstItem="2ow-ra-hpK" firstAttribute="trailing" secondItem="2Iq-WX-cFD" secondAttribute="trailing" id="P2L-qt-LvU"/>
+                                    <constraint firstItem="VB1-Ew-3aM" firstAttribute="leading" secondItem="yAJ-sg-uLL" secondAttribute="leading" id="WFO-Ce-BUc"/>
+                                    <constraint firstItem="2Iq-WX-cFD" firstAttribute="leading" secondItem="hgJ-0f-24x" secondAttribute="leading" id="Xu2-9a-OfD"/>
+                                    <constraint firstItem="pwG-rM-9do" firstAttribute="top" secondItem="2ow-ra-hpK" secondAttribute="bottom" constant="8" symbolic="YES" id="YUe-fm-4Ai"/>
+                                    <constraint firstItem="mv9-9c-4ah" firstAttribute="leading" secondItem="BuV-dr-WMV" secondAttribute="leading" id="Z1E-SN-vSd"/>
+                                    <constraint firstItem="yAJ-sg-uLL" firstAttribute="trailing" secondItem="oFw-AF-vCT" secondAttribute="trailing" id="Z6j-gb-Gr7"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="firstBaseline" secondItem="BEe-Of-h7l" secondAttribute="baseline" id="Zpt-jd-9Ug"/>
+                                    <constraint firstAttribute="trailing" secondItem="SHe-Jj-YYj" secondAttribute="trailing" constant="16" id="a4e-s2-iBI"/>
+                                    <constraint firstItem="pwG-rM-9do" firstAttribute="trailing" secondItem="hgJ-0f-24x" secondAttribute="trailing" id="b2I-la-ePI"/>
+                                    <constraint firstItem="hgJ-0f-24x" firstAttribute="leading" secondItem="mv9-9c-4ah" secondAttribute="leading" id="bLK-yd-OIo"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="leading" secondItem="BEe-Of-h7l" secondAttribute="trailing" constant="8" symbolic="YES" id="bPb-op-n2G"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="top" secondItem="BEe-Of-h7l" secondAttribute="top" id="cJn-81-5Y4"/>
+                                    <constraint firstItem="mv9-9c-4ah" firstAttribute="trailing" secondItem="BuV-dr-WMV" secondAttribute="trailing" id="dBU-TY-c1A"/>
+                                    <constraint firstItem="qOc-Nc-RJy" firstAttribute="leading" secondItem="faW-kj-YQq" secondAttribute="leading" id="e0J-KP-SEi"/>
+                                    <constraint firstItem="mv9-9c-4ah" firstAttribute="top" secondItem="hgJ-0f-24x" secondAttribute="bottom" constant="13" id="eZ5-gJ-kpd"/>
+                                    <constraint firstItem="qOc-Nc-RJy" firstAttribute="top" secondItem="azq-TO-GlJ" secondAttribute="bottom" constant="80" id="fin-Ih-1vE"/>
+                                    <constraint firstItem="2Iq-WX-cFD" firstAttribute="trailing" secondItem="mv9-9c-4ah" secondAttribute="trailing" id="fl0-s2-QpZ"/>
+                                    <constraint firstItem="Y0O-fm-Rmv" firstAttribute="trailing" secondItem="2ow-ra-hpK" secondAttribute="trailing" id="fxb-HP-DFs"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="top" secondItem="oFw-AF-vCT" secondAttribute="bottom" constant="21" id="gXx-et-NZM"/>
+                                    <constraint firstItem="dBM-xf-mAf" firstAttribute="top" secondItem="2ow-ra-hpK" secondAttribute="bottom" constant="27" id="ghh-ac-uP5"/>
+                                    <constraint firstItem="BuV-dr-WMV" firstAttribute="top" secondItem="mv9-9c-4ah" secondAttribute="bottom" constant="8" symbolic="YES" id="itF-LJ-Kbd"/>
+                                    <constraint firstItem="pwG-rM-9do" firstAttribute="leading" secondItem="2Iq-WX-cFD" secondAttribute="leading" id="lf6-V7-73i"/>
+                                    <constraint firstItem="BuV-dr-WMV" firstAttribute="centerX" secondItem="azq-TO-GlJ" secondAttribute="centerX" id="oDn-6u-Z5L"/>
+                                    <constraint firstItem="mv9-9c-4ah" firstAttribute="top" secondItem="oxm-Hh-wgQ" secondAttribute="bottom" constant="14" id="pWv-EC-iOp"/>
+                                    <constraint firstItem="rOK-WM-f4j" firstAttribute="baseline" secondItem="BEe-Of-h7l" secondAttribute="firstBaseline" id="rKf-BV-P5K"/>
+                                    <constraint firstItem="SHe-Jj-YYj" firstAttribute="top" secondItem="Uqh-Qg-xnW" secondAttribute="topMargin" id="rWw-kb-CUS"/>
+                                    <constraint firstItem="SHe-Jj-YYj" firstAttribute="centerX" secondItem="Uqh-Qg-xnW" secondAttribute="centerX" id="swV-vt-bkl"/>
+                                    <constraint firstItem="dBM-xf-mAf" firstAttribute="leading" secondItem="pwG-rM-9do" secondAttribute="trailing" constant="6" id="tLA-c7-jPB"/>
+                                    <constraint firstItem="VB1-Ew-3aM" firstAttribute="top" secondItem="qOc-Nc-RJy" secondAttribute="bottom" constant="8" symbolic="YES" id="v2l-c1-gCM"/>
+                                    <constraint firstItem="oFw-AF-vCT" firstAttribute="top" secondItem="yAJ-sg-uLL" secondAttribute="bottom" id="vGA-eA-uZT"/>
+                                    <constraint firstItem="faW-kj-YQq" firstAttribute="top" secondItem="VB1-Ew-3aM" secondAttribute="bottom" constant="1" id="vTE-7j-6in"/>
+                                    <constraint firstItem="qOc-Nc-RJy" firstAttribute="leading" secondItem="Uqh-Qg-xnW" secondAttribute="leading" constant="18" id="wFF-5m-6oE"/>
+                                    <constraint firstItem="BEe-Of-h7l" firstAttribute="leading" secondItem="yAJ-sg-uLL" secondAttribute="leading" id="xJY-KM-9bw"/>
+                                    <constraint firstItem="2Iq-WX-cFD" firstAttribute="top" secondItem="pwG-rM-9do" secondAttribute="bottom" constant="13" id="xs3-cn-pyD"/>
+                                    <constraint firstItem="bVr-9I-1cl" firstAttribute="leading" secondItem="VB1-Ew-3aM" secondAttribute="leading" id="zXC-t9-fWI"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uqh-Qg-xnW" firstAttribute="height" secondItem="VCb-ZC-Mjj" secondAttribute="height" id="8AZ-K0-aAE"/>
+                            <constraint firstItem="Uqh-Qg-xnW" firstAttribute="width" secondItem="VCb-ZC-Mjj" secondAttribute="width" id="Ht2-X8-KZn"/>
+                            <constraint firstItem="Uqh-Qg-xnW" firstAttribute="centerX" secondItem="VCb-ZC-Mjj" secondAttribute="centerX" id="NSV-Hz-RGh"/>
+                            <constraint firstItem="Uqh-Qg-xnW" firstAttribute="centerY" secondItem="VCb-ZC-Mjj" secondAttribute="centerY" id="ueB-uL-5mc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w9b-9S-D9P"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="750"/>
+                    <connections>
+                        <outlet property="averageGrossMargin" destination="pwG-rM-9do" id="Jgh-Vh-wRp"/>
+                        <outlet property="averageSalesByUnity" destination="Y0O-fm-Rmv" id="2gI-mH-2y1"/>
+                        <outlet property="discountPercentage" destination="hgJ-0f-24x" id="auL-nT-2Rz"/>
+                        <outlet property="resultFormula" destination="qOc-Nc-RJy" id="c1z-HL-Skh"/>
+                        <outlet property="saveFormules" destination="rOK-WM-f4j" id="tft-zV-moZ"/>
+                        <outlet property="scrolView" destination="Uqh-Qg-xnW" id="JmI-FZ-9r4"/>
+                        <outlet property="secondFormulaResult" destination="faW-kj-YQq" id="j6d-vz-Dar"/>
+                        <outlet property="thirdFormulaResult" destination="oFw-AF-vCT" id="4Se-XJ-Gui"/>
+                        <outlet property="transitionButton" destination="BEe-Of-h7l" id="Vyc-8e-kBo"/>
+                        <outlet property="unityPricePreDiscount" destination="BuV-dr-WMV" id="HeN-7Q-0e8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXY-m6-xRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3326" y="530"/>
+            <point key="canvasLocation" x="3325.5999999999999" y="529.83508245877067"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4x1-zJ-YVb">
@@ -3602,11 +3896,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4z-L4-MlK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prueba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzu-i9-eIx">
-                                        <rect key="frame" x="8" y="57" width="359" height="29"/>
+                                        <rect key="frame" x="9" y="41" width="359" height="28"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3616,7 +3910,7 @@
                                 <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDC-KW-5Zr">
-                                <rect key="frame" x="0.0" y="117" width="375" height="461"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="491"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -3625,11 +3919,11 @@
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoM-K1-V4d">
-                                <rect key="frame" x="0.0" y="573" width="375" height="94"/>
+                                <rect key="frame" x="0.0" y="579" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czm-CD-a4l">
-                                        <rect key="frame" x="157" y="20" width="59" height="59"/>
+                                        <rect key="frame" x="157" y="14" width="59" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
@@ -3705,29 +3999,36 @@
         <scene sceneID="YAw-4E-eVs">
             <objects>
                 <tableViewController storyboardIdentifier="ModalTestData" id="jA7-VH-soO" customClass="ModalTestView" customModule="Esteemator_Pro" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" id="4gV-js-0pe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="461"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" id="4gV-js-0pe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="491"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.070588235289999995" green="0.066666666669999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="result" rowHeight="59" id="ubD-iD-jeQ" customClass="CellCustomice" customModule="Esteemator_Pro" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="59"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="result" rowHeight="57" id="ubD-iD-jeQ" customClass="CellCustomice" customModule="Esteemator_Pro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubD-iD-jeQ" id="qvZ-9L-zxr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-yW-FuU">
+                                            <rect key="frame" x="7" y="8" width="360" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRG-9b-Lnp">
-                                            <rect key="frame" x="8" y="0.0" width="273" height="58"/>
+                                            <rect key="frame" x="7" y="0.0" width="256" height="45"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4M-dl-VYi">
-                                            <rect key="frame" x="210" y="29" width="157" height="21"/>
+                                            <rect key="frame" x="209" y="27" width="158" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3739,6 +4040,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="priceLabel" destination="O4M-dl-VYi" id="vET-j6-F7Y"/>
+                                    <outlet property="sectionTitle" destination="6Cn-yW-FuU" id="Is4-Rh-IO8"/>
                                     <outlet property="titleLabel" destination="VRG-9b-Lnp" id="Zdj-Nj-hCM"/>
                                 </connections>
                             </tableViewCell>
@@ -3751,7 +4053,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7E-Yn-365" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="1508.5457271364319"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="1508.095952023988"/>
         </scene>
     </scenes>
     <resources>

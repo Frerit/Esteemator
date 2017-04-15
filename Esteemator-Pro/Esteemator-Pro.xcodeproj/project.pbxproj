@@ -15,6 +15,9 @@
 		AF824E4A1E9C16C500586C43 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E491E9C16C500586C43 /* Utility.swift */; };
 		AF824E4C1E9C1B0000586C43 /* ModalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E4B1E9C1B0000586C43 /* ModalTestView.swift */; };
 		AF824E4E1E9C1B7900586C43 /* CustomModalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF824E4D1E9C1B7900586C43 /* CustomModalTest.swift */; };
+		AF86568A1E9ED7DF008F23DD /* FormulaFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8656891E9ED7DF008F23DD /* FormulaFiveView.swift */; };
+		AF86568C1E9EFF09008F23DD /* FormulasSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86568B1E9EFF09008F23DD /* FormulasSixView.swift */; };
+		AF86568E1EA27DCC008F23DD /* FormulaSeventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86568D1EA27DCC008F23DD /* FormulaSeventView.swift */; };
 		AF9BA6431E97DD6600CA555C /* ListFormulesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */; };
 		AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B01E95490300C76A7A /* AppDelegate.swift */; };
 		AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2B21E95490300C76A7A /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 		AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */; };
 		AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */; };
 		AFFBEE361E9D75C300950A51 /* FormulaOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */; };
+		AFFBEE381E9DA71D00950A51 /* FormulaTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBEE371E9DA71D00950A51 /* FormulaTwoView.swift */; };
+		AFFBEE3A1E9E861E00950A51 /* FormulaThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBEE391E9E861E00950A51 /* FormulaThreeView.swift */; };
+		AFFBEE3C1E9EC5F700950A51 /* FormulaFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFBEE3B1E9EC5F700950A51 /* FormulaFourView.swift */; };
 		B7AFDC0DBDA6F2F4B657AD33 /* Pods_Esteemator_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8A7B43F45E95EDA1DE6776 /* Pods_Esteemator_Pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,9 @@
 		AF824E491E9C16C500586C43 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Helper/Utility.swift; sourceTree = "<group>"; };
 		AF824E4B1E9C1B0000586C43 /* ModalTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalTestView.swift; path = View/ModalTestView.swift; sourceTree = "<group>"; };
 		AF824E4D1E9C1B7900586C43 /* CustomModalTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomModalTest.swift; path = View/CustomModalTest.swift; sourceTree = "<group>"; };
+		AF8656891E9ED7DF008F23DD /* FormulaFiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaFiveView.swift; path = Controller/FormulaFiveView.swift; sourceTree = "<group>"; };
+		AF86568B1E9EFF09008F23DD /* FormulasSixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulasSixView.swift; path = Controller/FormulasSixView.swift; sourceTree = "<group>"; };
+		AF86568D1EA27DCC008F23DD /* FormulaSeventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaSeventView.swift; path = Controller/FormulaSeventView.swift; sourceTree = "<group>"; };
 		AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListFormulesTableVC.swift; path = Controller/ListFormulesTableVC.swift; sourceTree = "<group>"; };
 		AFC5C2AD1E95490300C76A7A /* Esteemator-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Esteemator-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC5C2B01E95490300C76A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +62,9 @@
 		AFC5C2C61E954F9C00C76A7A /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = View/HomePageViewController.swift; sourceTree = "<group>"; };
 		AFC5C2CB1E958DDB00C76A7A /* ContentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentPageViewController.swift; path = View/ContentPageViewController.swift; sourceTree = "<group>"; };
 		AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaOneView.swift; path = Controller/FormulaOneView.swift; sourceTree = "<group>"; };
+		AFFBEE371E9DA71D00950A51 /* FormulaTwoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaTwoView.swift; path = Controller/FormulaTwoView.swift; sourceTree = "<group>"; };
+		AFFBEE391E9E861E00950A51 /* FormulaThreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaThreeView.swift; path = Controller/FormulaThreeView.swift; sourceTree = "<group>"; };
+		AFFBEE3B1E9EC5F700950A51 /* FormulaFourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormulaFourView.swift; path = Controller/FormulaFourView.swift; sourceTree = "<group>"; };
 		BA8A7B43F45E95EDA1DE6776 /* Pods_Esteemator_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Esteemator_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +143,12 @@
 				AF9BA6421E97DD6600CA555C /* ListFormulesTableVC.swift */,
 				AF3BAFC71E9938F400D2460C /* FormulaZeroView.swift */,
 				AFFBEE351E9D75C300950A51 /* FormulaOneView.swift */,
+				AFFBEE371E9DA71D00950A51 /* FormulaTwoView.swift */,
+				AFFBEE391E9E861E00950A51 /* FormulaThreeView.swift */,
+				AFFBEE3B1E9EC5F700950A51 /* FormulaFourView.swift */,
+				AF8656891E9ED7DF008F23DD /* FormulaFiveView.swift */,
+				AF86568B1E9EFF09008F23DD /* FormulasSixView.swift */,
+				AF86568D1EA27DCC008F23DD /* FormulaSeventView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -294,18 +312,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFBEE381E9DA71D00950A51 /* FormulaTwoView.swift in Sources */,
 				AFFBEE361E9D75C300950A51 /* FormulaOneView.swift in Sources */,
 				AF3682F51E969D000003BDAE /* LoginVController.swift in Sources */,
 				AFC5C2CC1E958DDB00C76A7A /* ContentPageViewController.swift in Sources */,
+				AF86568E1EA27DCC008F23DD /* FormulaSeventView.swift in Sources */,
 				AF824E4C1E9C1B0000586C43 /* ModalTestView.swift in Sources */,
+				AFFBEE3C1E9EC5F700950A51 /* FormulaFourView.swift in Sources */,
 				AF3682FC1E96A4610003BDAE /* Header.m in Sources */,
 				AF824E4A1E9C16C500586C43 /* Utility.swift in Sources */,
 				AF824E4E1E9C1B7900586C43 /* CustomModalTest.swift in Sources */,
 				AF3BAFC81E9938F400D2460C /* FormulaZeroView.swift in Sources */,
 				AF3682FE1E96E2410003BDAE /* RegisterViewController.swift in Sources */,
+				AF86568C1E9EFF09008F23DD /* FormulasSixView.swift in Sources */,
+				AFFBEE3A1E9E861E00950A51 /* FormulaThreeView.swift in Sources */,
 				AFC5C2C71E954F9C00C76A7A /* HomePageViewController.swift in Sources */,
 				AFC5C2B31E95490300C76A7A /* ViewController.swift in Sources */,
 				AF9BA6431E97DD6600CA555C /* ListFormulesTableVC.swift in Sources */,
+				AF86568A1E9ED7DF008F23DD /* FormulaFiveView.swift in Sources */,
 				AFC5C2B91E95490300C76A7A /* Esteemator_Pro.xcdatamodeld in Sources */,
 				AFC5C2B11E95490300C76A7A /* AppDelegate.swift in Sources */,
 			);

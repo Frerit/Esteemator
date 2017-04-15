@@ -48,17 +48,34 @@ class ModalTestView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "result") as? CellCustomice
-        
-        cell?.titleLabel?.text = self.datasend[0][indexPath.row] as? String
-        let datoNum = utility.numberFormat(baseNumber: self.datasend[1][indexPath.row] as! Double )
-        cell?.priceLabel?.text = datoNum
+        let dataPrice = self.datasend[1][indexPath.row] as! Double
+        if dataPrice == 0.0 {
+            cell?.priceLabel?.text = " "
+            cell?.titleLabel.text = ""
+            cell?.sectionTitle.alpha = 1
+            cell?.sectionTitle?.text = self.datasend[0][indexPath.row] as? String
+        } else {
+            let datoNum = utility.numberFormat(baseNumber: dataPrice)
+            cell?.priceLabel?.text = datoNum
+            cell?.titleLabel?.text = self.datasend[0][indexPath.row] as? String
+        }
         return cell!
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let dataPrice = self.datasend[1][indexPath.row] as! Double
+        var size:CGFloat = 56
+        if dataPrice == 0.0 {  size = 40  }
+        return size
+    }
+    
 }
+
+
 
 class CellCustomice: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var sectionTitle: UILabel!
 }
